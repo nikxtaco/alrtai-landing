@@ -18,8 +18,8 @@ const Navbar = () => {
       { id: 1, Name: 'Home', to: '/#home' },
       { id: 2, Name: 'Team', to: '/team' },
       { id: 3, Name: 'Contact', to: '/#contact' },
-      { id: 4, Name: 'Log In', to: '/login' },
-   ]
+      // { id: 4, Name: 'Log In', to: 'https://dash.alrt.ai' },
+   ];
 
    return (
       <div className="navbar">
@@ -36,6 +36,10 @@ const Navbar = () => {
                            <HLink style={{'color':'#dfdfdf'}} to={link.to} >{link.Name}</HLink>
                         </li>
                      ))}
+                     <li >
+                        <a style={{'color':'#dfdfdf'}} href={"https://dash.alrt.ai"} >{"Login"}</a>
+                     </li>
+
                   </ul>
                </div>
             </nav>
