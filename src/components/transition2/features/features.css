@@ -9,14 +9,17 @@ h2{
     padding:5vh 5vw;
     background-color:#F1EFFE;
   }
+
+  
   
   .features h1{
     grid-column:1;
     grid-row-start: 1;
     grid-row-end:2;
     text-align:left;
-    max-width:25vw;
+    max-width:30vw;
     padding:0 2vw;
+    
   }
 
   .features hr{
@@ -32,8 +35,8 @@ h2{
     display:block;
     grid-row-start: 1;
     grid-row-end:2;
-    max-width:25vw;
-    padding:0 2vw;
+    max-width:20vw;
+    padding-left:0vw;
     margin:auto;
   }
   
@@ -42,8 +45,8 @@ h2{
     display:block;
     grid-row-start: 1;
     grid-row-end:2;
-    max-width:25vw;
-    padding:0 2vw;
+    max-width:20vw;
+    padding-left:2vw;
     margin:auto;
   }
   
@@ -52,8 +55,8 @@ h2{
     display:block;
     grid-row-start: 1;
     grid-row-end:2;
-    max-width:25vw;
-    padding:0 2vw;
+    max-width:20vw;
+    padding-left:4vw;
     margin:auto;
 }
   
@@ -92,8 +95,7 @@ h2{
       display:block;
       width:100vw;
       margin:0;
-      padding: 5vh 5vw;
-      padding-top:3vh;
+      padding-top:0vh;
     }
     .features h1{
       text-align:center;
@@ -101,7 +103,7 @@ h2{
       padding:0 2vw;
       font-size:2rem;
       margin:auto;
-      margin-top:10rem;
+      padding-top:3rem;
       margin-bottom:1rem;
     }
     
@@ -112,11 +114,13 @@ h2{
       display:block;
       width:100vw;
       margin:0;
+      padding:0;
     }
   
     .features .feature1 .text, .features .feature2 .text, .features .feature3 .text{
       width:80vw;
       text-align:center;
+      margin-left:5vw;
     }
   
     .features .feature1 .img, .features .feature2 .img, .features .feature3 .img{

@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import './index.css';
 import FullPage from './App.js';
 import Team from './Team.js';
+import Contact from './Contact.js';
 import * as serviceWorker from './serviceWorker';
 
 //Tracker
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/" component={FullPage} />
           <Route path="/team" component={Team} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </div>
     </Router>,

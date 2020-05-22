@@ -17,7 +17,7 @@ const Navbar = () => {
    const links = [
       { id: 1, Name: 'Home', to: '/#home' },
       { id: 2, Name: 'Team', to: '/team' },
-      { id: 3, Name: 'Contact', to: '/#contact' },
+      { id: 3, Name: 'Contact', to: '/contact' },
       // { id: 4, Name: 'Log In', to: 'https://dash.alrt.ai' },
    ];
 

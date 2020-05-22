@@ -1,9 +1,10 @@
 import React from "react"
 
 import "./team.css"
+import "./App.css"
 
 import Navbar from "./components/transition1/navbar/navbar.js"
-
+import Footer from "./components/transition2/footer/footer.js"
 
 const SecondPage = () => (
   <div className="team_page">
@@ -61,6 +62,8 @@ const SecondPage = () => (
       </div>
 
     </div>
+
+    <Footer />
     </div>
 
 )

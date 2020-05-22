@@ -2,7 +2,6 @@
 
 
 #about h1 {
-    font-family: 'Dosis',sans-serif;
     padding-bottom:4rem;
     font-weight: 320;
     font-size:2rem;
@@ -18,8 +17,8 @@
 
 
 .team_page{
-    background-color: #5B43EF;
-    color:white;
+    background-color: #F1EFFE;
+    color:black;
 }
 
 #intro {
@@ -36,7 +35,6 @@
 
 #intro p {
     margin:5rem auto;
-    font-family:'Dosis',sans-serif;
     font-size:1.1rem;
     width:75%;
     font-weight: 300;
@@ -45,7 +43,6 @@
 
 #about h2 {
     margin-top:2rem;
-    font-family:'Dosis',sans-serif;
     font-size:1.7rem;
     font-weight: 400;
 }
@@ -200,7 +197,6 @@
     
     #about h2 {
         margin-top:2rem;
-        font-family:'Dosis',sans-serif;
         font-size:1.4rem;
         font-weight: 200;
     }

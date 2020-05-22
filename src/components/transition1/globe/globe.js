@@ -17,8 +17,8 @@ import "./globe.css"
   //const [newsCount, setNewsCount] = useState([]);
   
   useEffect(() => { //api.alrt.ai/api/v1/viz/globedata
-    axios.get("https://api.alrt.ai/api/v1/viz/globedata") //jsonplaceholder.typicode.com/todos/1
-    //.then(res => setNewsCount(res.data))
+    axios.get("https://jsonplaceholder.typicode.com/todos/1") //jsonplaceholder.typicode.com/todos/1
+    //.then(res => setNewsCount(res.data)) //api.alrt.ai/api/v1/viz/globedata
     .then(res => console.log(res))
   });
 

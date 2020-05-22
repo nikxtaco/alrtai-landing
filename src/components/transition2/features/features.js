@@ -14,17 +14,17 @@ class App extends React.Component {
 
 
 <div className="features">
-  <h1>Our Unique Features</h1>
+  <h1>Our Value Proposition</h1>
   <hr/>
 
   <div className="feature1">
   <img src={img1} alt="" className="img"/>
     <div className="text">
       <h2>
-      Data Visualization
+      Alerts
       </h2>
       <p>
-      Data visualization is the act of taking information and placing it into a visual context, such as a map or graph. Data visualizations make big and small data easier for the human brain to understand.
+      That's why we're called alrt.ai. We'll find the news before it breaks because we scrape the world's global news feeds to find the story locally before it hits the headlines. Refinery explosion? We'll cluster news into events to make sure you only get the very first alert, then hit our dashboard to research the story in more depth.
       </p>
     </div>
   </div>
@@ -33,10 +33,10 @@ class App extends React.Component {
   <img src={img2} alt="" className="img"/>
     <div className="text">
       <h2>
-      Media Risk Assesment
+      Dashboard
       </h2>
       <p>
-      Risk analysis is the process of identifying and analyzing potential issues that could negatively impact key business initiatives or critical projects in order to help organizations avoid or mitigate those risks.
+      Our dashboard will show you curated news based on your scenario, classified by theme. For example if you have a watchlist of 100 companies, we can show you and stories based on various types of financial crime: they're scored by severity and grouped into categories like cybercrime, sanctions etc. Explore a node-graph view and see how entities are connected by different news stories. Backtest and research stories that move markets
       </p>
     </div>
   </div>
@@ -45,10 +45,10 @@ class App extends React.Component {
     <img src={img3} alt="" className="img"/>
     <div className="text">
       <h2>
-      Entity Detection
+      Niche Markets
       </h2>
       <p>
-      Named Entity Recognition is a process where an algorithm takes a string of text as input and identifies relevant nouns such as people, places, and organizations that are mentioned in that string.
+      We can quickly and easily create scenarios based on niche markets or scenarios. Stories or topics that aren't covered by major news providers. Create and maintain your own: curate your keywords and even scoring methodologies based on news source quality or reliability. End result is a custom dashboard that will tell you something you don't already know.
       </p>
     </div>
   </div>
