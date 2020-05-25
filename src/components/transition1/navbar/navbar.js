@@ -24,7 +24,7 @@ const Navbar = () => {
    return (
       <div className="navbar">
          <div className="navbar-fixed">
-            <nav className="nav-wrapper " style={{ "background-color": "#5B43EF" }}>
+            <nav className="nav-wrapper " style={{ "background-color": "#360636" }}>
                <div className="container">
                   <a href="#" data-target="mobile-nav" className="sidenav-trigger">
                      <i className="material-icons" style={{ color: "#dfdfdf" }}>menu</i>
@@ -45,7 +45,7 @@ const Navbar = () => {
             </nav>
          </div>
 
-         <ul className="sidenav" id='mobile-nav' style={{ "background-color": "#5B43EF", 'padding-top':'20vh' }}>
+         <ul className="sidenav" id='mobile-nav' style={{ "background-color": "#360636", 'padding-top':'20vh' }}>
             {links.map(link => (
                <li key={link.id} >
                   <HLink className='white-text' style={{'margin':'5vh 0', 'text-align':'center'}}

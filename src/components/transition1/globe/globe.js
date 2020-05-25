@@ -1,6 +1,6 @@
 
     import React from 'react';
-    import {useState, useRef, useEffect} from 'react'
+    import {useState, useRef, useEffect, setState} from 'react'
     import ReactDOM from 'react-dom'
     import Globe from 'react-globe.gl';
     import axios from 'axios'
@@ -14,12 +14,25 @@ import "./globe.css"
       const [altitude, setAltitude] = useState(0.1);
       const [transitionDuration, setTransitionDuration] = useState(1000);
       const [autoRotate, setAutoRotate] = useState(true);
-  //const [newsCount, setNewsCount] = useState([]);
+      const [newsCountReturn, setNewsCountReturn] = useState({ data: {}});
+
+      var deet = {
+        data : {
+          'AFG': {'storycount': 29},
+          'AGO': {'storycount': 22}          
+        }
+      }
   
   useEffect(() => { //api.alrt.ai/api/v1/viz/globedata
-    axios.get("https://jsonplaceholder.typicode.com/todos/1") //jsonplaceholder.typicode.com/todos/1
-    //.then(res => setNewsCount(res.data)) //api.alrt.ai/api/v1/viz/globedata
-    .then(res => console.log(res))
+    fetch("https://api.alrt.ai/api/v1/viz/globedata") //jsonplaceholder.typicode.com/todos/1
+    .then(res => res.json())
+  //  .then((res) => { setState(res.data) ; 
+    //  console.log(res.data)})
+    .then(newsCountReturn => setNewsCountReturn(newsCountReturn)) //api.alrt.ai/api/v1/viz/globedata
+
+   // console.log(newsCountReturn.data.IND.storycount)
+
+    //console.log(deet.data.AFG.storycount)
   });
 
   /*
@@ -38,6 +51,10 @@ import "./globe.css"
         fetch('../datasets/ne_110m_admin_0_countries.geojson').then(res => res.json())
           .then(countries=> {
             setCountries(countries);
+
+            //console.log(countries.features[2].properties.ISO_A3)
+
+           // countries.features[2].properties.ISO_A3_EH = countries.features[2].properties.ISO_A3;
   
             setTimeout(() => {
                 setTransitionDuration(2000);
@@ -64,7 +81,7 @@ import "./globe.css"
               <div>
                 <Globe
                   showAtmosphere={false}
-                  backgroundColor={'#5B43EF'} //#0a0b29
+                  backgroundColor={'#360636'} //#0a0b29 //#5B43EF
                   pointsMerge={false}
                   onPolygonClick={({properties : polygon}) => `
                     <b>${polygon.ADMIN}</b><br/>

@@ -15,8 +15,8 @@
 .sections hr{
   width:100px;
   height:5px;
-  background-color:#5B43EF;
-  border:10px 10px #5B43EF;
+  background-color:#360636;
+  border:10px 10px #360636;
   box-shadow:none;
 }
 
@@ -265,7 +265,7 @@ color:rgb(223, 223, 223)
   }
 
   .button{
-    background-color:purple;
+    background-color:#360636;
     border:none;
     margin-top:3rem;
     color:white;

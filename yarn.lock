@@ -4966,7 +4966,7 @@ find-up@^1.0.0:
   integrity sha1-ay6YIrGizgpgq2TWEOzK1TyyTQ8=
   dependencies:
     path-exists "^2.0.0"
-    pinkie-promise "^2.0.0"
+    blueie-promise "^2.0.0"
 
 find-up@^2.0.0, find-up@^2.1.0:
   version "2.1.0"
@@ -5356,7 +5356,7 @@ globby@^6.1.0:
     glob "^7.0.3"
     object-assign "^4.0.1"
     pify "^2.0.0"
-    pinkie-promise "^2.0.0"
+    blueie-promise "^2.0.0"
 
 globe.gl@^2.10.0:
   version "2.10.1"
@@ -8226,7 +8226,7 @@ path-exists@^2.0.0:
   resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-2.1.0.tgz#0feb6c64f0fc518d9a754dd5efb62c7022761f4b"
   integrity sha1-D+tsZPD8UY2adU3V77YscCJ2H0s=
   dependencies:
-    pinkie-promise "^2.0.0"
+    blueie-promise "^2.0.0"
 
 path-exists@^3.0.0:
   version "3.0.0"
@@ -8330,16 +8330,16 @@ pify@^4.0.1:
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
-pinkie-promise@^2.0.0:
+blueie-promise@^2.0.0:
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/pinkie-promise/-/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
+  resolved "https://registry.yarnpkg.com/blueie-promise/-/blueie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
   integrity sha1-ITXW36ejWMBprJsXh3YogihFD/o=
   dependencies:
-    pinkie "^2.0.0"
+    blueie "^2.0.0"
 
-pinkie@^2.0.0:
+blueie@^2.0.0:
   version "2.0.4"
-  resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
+  resolved "https://registry.yarnpkg.com/blueie/-/blueie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
 pirates@^4.0.1:
@@ -8487,9 +8487,9 @@ postcss-color-mod-function@^3.0.3:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-color-rebeccapurple@^4.0.1:
+postcss-color-rebeccablue@^4.0.1:
   version "4.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-color-rebeccapurple/-/postcss-color-rebeccapurple-4.0.1.tgz#c7a89be872bb74e45b1e3022bfe5748823e6de77"
+  resolved "https://registry.yarnpkg.com/postcss-color-rebeccablue/-/postcss-color-rebeccablue-4.0.1.tgz#c7a89be872bb74e45b1e3022bfe5748823e6de77"
   integrity sha512-aAe3OhkS6qJXBbqzvZth2Au4V3KieR5sRQ4ptb2b2O8wgvB3SJBsdG+jsn2BZbbwekDG8nTfcCNKcSfe/lEy8g==
   dependencies:
     postcss "^7.0.2"
@@ -8924,7 +8924,7 @@ postcss-preset-env@6.7.0:
     postcss-color-gray "^5.0.0"
     postcss-color-hex-alpha "^5.0.3"
     postcss-color-mod-function "^3.0.3"
-    postcss-color-rebeccapurple "^4.0.1"
+    postcss-color-rebeccablue "^4.0.1"
     postcss-custom-media "^7.0.8"
     postcss-custom-properties "^8.0.11"
     postcss-custom-selectors "^5.1.2"
