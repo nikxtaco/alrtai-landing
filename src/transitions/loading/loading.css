@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.loading_page{
+    background-color: #360636;
+    color:white;
+    min-height:100vh;
+}
+
+.logo_loading{
+    width:20vw;
+    margin-top:10vh;
+  }
+
+.hello{
+    font-size:1.4rem;
+    text-transform: lowercase;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+@media screen and (max-width: 750px){
+    .logo_loading{
+      width:60vw;
+    }
+
+    .hello{
+        font-size:1.2rem;
+    }
+  }

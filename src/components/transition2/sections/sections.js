@@ -1,8 +1,8 @@
 import React from "react";
 import "./sections.css";
-import img1 from "../../../media/section1.png"
-import img2 from "../../../media/section2.png"
-import img3 from "../../../media/section3.png"
+import img1 from "../../../media/section1p.png"
+import img2 from "../../../media/section2p.png"
+import img3 from "../../../media/section3p.png"
 
 //import Slider from "./sections.js"
 

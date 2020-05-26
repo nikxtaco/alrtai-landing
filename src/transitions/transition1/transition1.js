@@ -5,9 +5,16 @@ import Navbar from "../../components/transition1/navbar/navbar.js"
 
 import "./transition1.css"
 
-export default () => {
+import Loading from "../loading/loading.js"
+
+ const Fullpage = props => {
+
   return (
     <div className="transition1">
+
+    {!props.newsCountReturn && <div><Loading /></div>}
+
+      {props.newsCountReturn && <div>
       <Navbar/>
 
       <div className="content">
@@ -33,9 +40,14 @@ export default () => {
     </div>
 
     <div className="component first-component globe">
-      <Globe/>
+      <Globe newsCountReturn={props.newsCountReturn} />
+    </div>
 
     </div>
+            }
+
     </div>
   );
 };
+
+export default Fullpage

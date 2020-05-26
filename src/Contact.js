@@ -26,7 +26,6 @@ const ThirdPage = () => (
     </div>
     
 <h3>Terms of Use | Privacy Policy</h3>
-<img></img>
 <h4>2020 ALRT AI</h4>
 
 </div>         

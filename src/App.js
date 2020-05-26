@@ -1,22 +1,29 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import Transition1 from "./transitions/transition1/transition1.js"
 import Transition2 from "./transitions/transition2/transition2.js"
 
 import './App.css';
 
-class FullPage extends React.Component {
-  render() {
+export default () => {
+
+    const [newsCountReturn, setNewsCountReturn] = useState();
+  
+  useEffect(() => { //api.alrt.ai/api/v1/viz/globedata
+    fetch("https://api.alrt.ai/api/v1/viz/globedata") //jsonplaceholder.typicode.com/todos/1
+    .then(res => res.json())
+    .then((res) => { setNewsCountReturn(res.data) ; 
+    })
+  }, []);
+
     return (
       <body>
-        <Transition1 />           
-        <Transition2 />
+        <Transition1  newsCountReturn={newsCountReturn} />           
+        <Transition2  newsCountReturn={newsCountReturn} />
       </body>
     );
   }
-}
 
-export default FullPage;
 
 // import React from "react";
 // import { Pager } from "react-bootstrap";

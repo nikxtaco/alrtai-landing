@@ -2,7 +2,7 @@ import React from "react";
 
 import "./moreinfo.css"
 
-import img from "../../../media/moreinfo.png"
+import img from "../../../media/moreinfop.png"
 
 export default () => {
   return (
