@@ -21,6 +21,13 @@ const Navbar = () => {
       // { id: 4, Name: 'Log In', to: 'https://dash.alrt.ai' },
    ];
 
+   const links_mob = [
+      { id: 1, Name: 'Home', to: '/#home' },
+      { id: 2, Name: 'Team', to: '/team' },
+      { id: 3, Name: 'Contact', to: '/contact' },
+      { id: 4, Name: 'Log In', to: 'https://dash.alrt.ai' },
+   ];
+
    return (
       <div className="navbar">
          <div className="navbar-fixed">
@@ -30,14 +37,16 @@ const Navbar = () => {
                      <i className="material-icons" style={{ color: "#dfdfdf" }}>menu</i>
                   </a>
                   <img src={img} alt="" className="logo"/>
-                  <ul className="right hide-on-med-and-down" >
+                  <ul className="right hide-on-med-and-down menu_nav" >
                      {links.map(link => (
                         <li key={link.id}>
-                           <HLink style={{'color':'#dfdfdf'}} to={link.to} >{link.Name}</HLink>
+                           <HLink style={{'color':'#dfdfdf', 'font-size':'1.2rem'}} to={link.to} >{link.Name}</HLink>
                         </li>
                      ))}
                      <li >
-                        <a style={{'color':'#dfdfdf'}} href={"https://dash.alrt.ai"} >{"Login"}</a>
+                        <button className="login_button">                        
+                           <a style={{'color':'#360636'}} href={"https://dash.alrt.ai"} >{"Login"}</a>
+                        </button>
                      </li>
 
                   </ul>
@@ -46,7 +55,7 @@ const Navbar = () => {
          </div>
 
          <ul className="sidenav" id='mobile-nav' style={{ "background-color": "#360636", 'padding-top':'20vh' }}>
-            {links.map(link => (
+            {links_mob.map(link => (
                <li key={link.id} >
                   <HLink className='white-text' style={{'margin':'5vh 0', 'text-align':'center'}}
                   to={link.to} >{link.Name}</HLink>

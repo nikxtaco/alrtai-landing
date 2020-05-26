@@ -14,8 +14,8 @@ class App extends React.Component {
 
 
 <div className="features">
-  <h1>Our Value Proposition</h1>
-  <hr/>
+  <h1>Our Value Proposition  <hr/>
+</h1>
 
   <div className="feature1">
   <img src={img1} alt="" className="img"/>
