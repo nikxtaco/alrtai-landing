@@ -7,6 +7,8 @@ import "./transition1.css"
 
 import Loading from "../loading/loading.js"
 
+import { HashLink as HLink } from 'react-router-hash-link';
+
  const Fullpage = props => {
 
   return (
@@ -27,15 +29,20 @@ import Loading from "../loading/loading.js"
             If you talk to any senior business leader,  heads of sales, traders, risk managers, they'll all say something along these lines. They're fed up with data overload, or even just having too much information. They need insights. Show me what i need to know, don't make me search for it. What are the Top 10 things I should know about today. We use Artificial Intelligence to analyse global news feeds to find news that’s immediately important to you. Whether you’re looking for market moving events, monitoring counterparties or suppliers for pre-deal checks, KYC or ongoing risk management, we can provide up to the minute alerts on your clients, supply chain, even people, countries or specific events. News is filtered, ranked and aggregated, augmenting and automating your capability to review the relevant stories.
             </p>
 
+            <span className="login">
             <a href="www.google.com">
             <button className="button button1">
-            Get Started
+            Log In
             </button>
             </a>
+            </span>
 
             <button className="button button2">
-            Learn More
+            <HLink className='white-text' style={{'margin':'5vh 0', 'text-align':'center'}}
+                  to="/#moreinfo" >Learn More</HLink>
             </button>
+            <a href="https://dash.alrt.ai" className="have_account">Already have an account?</a>
+
     
     </div>
 

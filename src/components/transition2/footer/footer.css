@@ -34,11 +34,22 @@
 
 #footer h4 {
     font-size: 0.9rem;
-    text-transform: capitalize;
-    margin-bottom:1rem;
-    margin-top:1rem;
+    text-transform: lowercase;
+    margin-bottom:0.7rem;
+    margin-top:0.7rem;
     line-height: 0;
 }
+
+.logo_footer{
+    margin-left:0;
+    width:10vw;
+}
+
+@media screen and (max-width: 750px){
+    .logo_footer{
+      width:20vw;
+    }
+  }
 
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 

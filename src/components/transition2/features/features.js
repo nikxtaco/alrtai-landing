@@ -2,7 +2,7 @@ import React from "react";
 import "./features.css";
 import img1 from "../../../media/visualisation.svg";
 import img2 from "../../../media/risk.svg";
-import img3 from "../../../media/visualisation.svg";
+import img3 from "../../../media/detection.svg";
 
 //import Slider from "./features.js"
 

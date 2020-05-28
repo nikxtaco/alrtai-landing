@@ -36,7 +36,6 @@ h2{
     grid-row-end:2;
     max-width:20vw;
     padding-left:0vw;
-    margin:auto;
   }
   
   .features .feature2{
@@ -46,7 +45,6 @@ h2{
     grid-row-end:2;
     max-width:20vw;
     padding-left:2vw;
-    margin:auto;
   }
   
   .features .feature3{
@@ -56,7 +54,6 @@ h2{
     grid-row-end:2;
     max-width:20vw;
     padding-left:4vw;
-    margin:auto;
 }
   
   .features .feature1 .text{

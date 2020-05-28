@@ -6,7 +6,7 @@ import img from "../../../media/moreinfop.png"
 
 export default () => {
   return (
-    <div>
+    <div id = "moreinfo">
       <div className="morecontent">
       <div className="moretext">
             <h1>

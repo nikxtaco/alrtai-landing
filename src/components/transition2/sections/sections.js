@@ -18,7 +18,7 @@ class App extends React.Component {
 <div className="sections">
 
   <div className="heading">
-  <h1>We Can Help You</h1>
+  <h1>Who Is This For?</h1>
   <hr/>
   </div>
 

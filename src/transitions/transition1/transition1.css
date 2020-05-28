@@ -46,9 +46,19 @@
     border:none;
   }
 
+  .login{
+      max-width:15vw;
+  }
+
+  .have_account{
+      color:rgba(255, 255, 255, 0.8);
+      font-size:0.8rem;
+  }
+
 .button1{
     color:#360636;
     background-color:white;
+    margin-bottom:10px;
 }
 
 .button2{
@@ -81,6 +91,11 @@
     font-size:1rem;
     font-weight:400;
     line-height: 1.2rem;
+}
+
+.have_account{
+    font-size:0.8rem;
+    
 }
 
 .button{
