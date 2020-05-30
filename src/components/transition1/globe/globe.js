@@ -53,7 +53,7 @@
               <div>
                 <Globe
                   showAtmosphere={false}
-                  backgroundColor={'#360636'} //#0a0b29 //#5B43EF
+                  backgroundColor={'#1e021e'} //#0a0b29 //#5B43EF
                   pointsMerge={false}
                   onPolygonClick={({properties : polygon}) => `
                     <b>${polygon.ADMIN}</b><br/>
@@ -177,7 +177,7 @@ export default World;
 //               {newsCountReturn && 
 //                 <Globe
 //                   showAtmosphere={false}
-//                   backgroundColor={'#360636'} //#0a0b29 //#5B43EF
+//                   backgroundColor={'#1e021e'} //#0a0b29 //#5B43EF
 //                   pointsMerge={false}
 //                   onPolygonClick={({properties : polygon}) => `
 //                     <b>${polygon.ADMIN}</b><br/>

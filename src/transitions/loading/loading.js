@@ -13,7 +13,7 @@ const Fullpage = props => {
 <img src={img} alt="" className="logo_loading margin_contact"/>
     
     
-<p className="hello">hello world.</p>
+<p className="saving hello">hello world&nbsp;<span>.</span><span>.</span><span>.</span></p>
 
 </div>         
 

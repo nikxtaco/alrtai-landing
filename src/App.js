@@ -419,7 +419,9 @@ export default () => {
       }
   }
   
+  setTimeout(() => {
     setNewsCountReturn(c.data)
+  }, 3000);
 
     // fetch("https://api.alrt.ai/api/v1/viz/globedata") //jsonplaceholder.typicode.com/todos/1
     // .then(res => res.json())

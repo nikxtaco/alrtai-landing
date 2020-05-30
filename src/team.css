@@ -140,6 +140,7 @@
 }
 
 #about #row2 #contain5 .person5 {
+    background:url("./img/ameen.jpg");
     background-repeat:no-repeat;
     background-size:contain;
     height:320px;
@@ -154,7 +155,7 @@
 }
 
 #about #row2 #contain6 .person6 {
-    background:url("./img/ameen.jpg");
+    background:url("./img/max.jpg");
     background-repeat:no-repeat;
     background-size:contain;
     height:320px;

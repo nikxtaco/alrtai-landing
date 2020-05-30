@@ -1,6 +1,6 @@
 
 .contact_page{
-    background-color: #360636;
+    background-color: #1e021e;
     color:white;
     min-height:100vh;
 }
@@ -23,7 +23,7 @@
     text-align: center;
     padding-top:1rem;  
     padding-bottom:1rem;
-    background-color:#360636;
+    background-color:#1e021e;
     color:white;
     margin:0;
 }
@@ -80,7 +80,7 @@ a, a:hover {
     height: 28px;
 	color: #FFF;
 	background-color: rgba(0, 0, 0, 0);
-	padding-top: 12px;
+	padding-top: 5px;
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -129,17 +129,19 @@ a, a:hover {
         font-size: 0.6rem;
         text-transform: capitalize;
         margin-bottom:0;
-        margin-top:2rem;
+        margin-top:1rem;
         line-height: 0;
     }
     
     #footer h4 {
         font-size: 0.6rem;
         text-transform: capitalize;
-        margin-bottom:1rem;
-        margin-top:2rem;
+        margin-bottom:1.5rem;
+        margin-top:1.5rem;
         line-height: 0;
     }
+
+
         
     }
     

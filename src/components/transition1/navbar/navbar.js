@@ -31,7 +31,7 @@ const Navbar = () => {
    return (
       <div className="navbar">
          <div className="navbar-fixed">
-            <nav className="nav-wrapper " style={{ "background-color": "#360636" }}>
+            <nav className="nav-wrapper " style={{ "background-color": "#1e021e" }}>
                <div className="container">
                   <a href="#" data-target="mobile-nav" className="sidenav-trigger">
                      <i className="material-icons" style={{ color: "#dfdfdf" }}>menu</i>
@@ -45,7 +45,7 @@ const Navbar = () => {
                      ))}
                      <li >
                         <button className="login_button">                        
-                           <a style={{'color':'#360636'}} href={"https://dash.alrt.ai"} >{"Login"}</a>
+                           <a style={{'color':'#1e021e'}} href={"https://dash.alrt.ai"} >{"Login"}</a>
                         </button>
                      </li>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
             </nav>
          </div>
 
-         <ul className="sidenav" id='mobile-nav' style={{ "background-color": "#360636", 'padding-top':'20vh' }}>
+         <ul className="sidenav" id='mobile-nav' style={{ "background-color": "#1e021e", 'padding-top':'20vh' }}>
             {links_mob.map(link => (
                <li key={link.id} >
                   <HLink className='white-text' style={{'margin':'5vh 0', 'text-align':'center'}}

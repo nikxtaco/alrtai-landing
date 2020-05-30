@@ -1,5 +1,5 @@
 .transition1{
-    background-color:#360636; /*#360636*/
+    background-color:#1e021e; /*#360636*/
     color:white;
 }
 
@@ -33,6 +33,12 @@
     line-height: 2rem;
 }
 
+.two_buttons{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+
 .button{
     margin-top:2rem;
     color:white;
@@ -47,16 +53,25 @@
   }
 
   .login{
-      max-width:15vw;
+    grid-column:1;
+    grid-row:1;
+    display:grid;
+  }
+
+  .learn_more{
+    grid-column:2;
+    grid-row:1;
   }
 
   .have_account{
       color:rgba(255, 255, 255, 0.8);
       font-size:0.8rem;
+      grid-row:2;
+      grid-column:1;
   }
 
 .button1{
-    color:#360636;
+    color:#1e021e;
     background-color:white;
     margin-bottom:10px;
 }
@@ -95,6 +110,8 @@
 
 .have_account{
     font-size:0.8rem;
+    text-align:left;
+    padding-left:5vw;
     
 }
 
@@ -110,8 +127,15 @@
 
 .button1{
     margin-right:10vw;
-    color:#360636;
+    color:#1e021e;
     background-color:white;
+    margin-left:5vw;
+    padding-left:0;
+}
+
+.button2{
+    margin-right:5vw;
+    padding-right:0;
 }
 
 }

@@ -48,15 +48,20 @@ const SecondPage = () => (
       <h2>Tino Thayil</h2>
       <h3>COO</h3>
       <h4>Tino began his entrepreneurial journey in his sophomore year of college by cofounding an AR based Learning platform called Arvy. He has also worked on the product for a successful android application on Google playstore. He loves building products out of ideas and competing in Hackathons and pitching competitions. He is an avid tech enthusiast who is always looking out for new technologies and using it to innovate current products.</h4>
-      
+      </div>
+
+      <div id="contain5">
+      <div className="person5"></div>
+      <h2>Ameen Azeez</h2>
+      <h3>Head of UI/UX</h3>
+      <h4>Ameen is a passionate designer and developer. He started out by designing posters, and later started working on designing and developing websites and applications. He loves participating in contests and won a few hackathons and designing contests.  He also has a eye for photography.</h4>
       </div>
 
       <div id="contain6">
       <div className="person6"></div>
-      <h2>Ameen Azeez</h2>
-      <h3>Head of UI/UX</h3>
-      <h4>Ameen is a passionate designer and developer. He started out by designing posters, and later started working on designing and developing websites and applications. He loves participating in contests and won a few hackathons and designing contests.  He also has a eye for photography.</h4>
-      
+      <h2>Max Murmann</h2>
+      <h3>Data Scientist</h3>
+      <h4>Max cycles and knowledges.</h4>
       </div>
 
       </div>
