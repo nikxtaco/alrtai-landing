@@ -71,7 +71,7 @@
                   polygonLabel={({ properties: d }) => `
                     ${place=d.ISO_A3}
                     <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-                    News Count: ${newsCountReturn[place] ? newsCountReturn[place].storycount : null}
+                    News Count: ${newsCountReturn[place] ? newsCountReturn[place].storycount : 0}
                   `}
                   polygonsTransitionDuration={transitionDuration}
                 />

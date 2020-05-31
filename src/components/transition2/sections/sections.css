@@ -254,7 +254,7 @@ margin-bottom:4rem;
     width:80vw;
     margin:auto;
     display: unset;
-    margin-bottom:1rem;
+    margin-bottom:2rem;
   }
 
   .sections .section3 .img{
@@ -273,6 +273,8 @@ margin-bottom:4rem;
     grid-column:2;
     width:80vw;
     margin:auto;
+    margin-bottom:1rem;
+
   }
 }
 
