@@ -60,7 +60,7 @@ export default () => {
               "storycount": 75
           },
           "USA": {
-              "storycount": 2
+              "storycount": 16205
           },
           "DOM": {
               "storycount": 10
