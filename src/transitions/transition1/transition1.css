@@ -186,14 +186,14 @@
     .usecase{
         position:relative;
         left:45vw;
-        top:-15vh;
+        top:-12vh;
     color:white;
     padding:5px 10px;
     border-radius:5px;
     font-size:1.3rem;
     text-decoration: none;
     border:none;
-    /* border:2px solid white; */
+    border:0.5px solid transparent;
     background-color:transparent;
     }
 
