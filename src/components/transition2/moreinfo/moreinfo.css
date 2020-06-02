@@ -1,13 +1,36 @@
 .morecontent{
     margin:10vh;
-    margin-top:0;
-    padding-top:5vh;
+    margin-top:0vh;
+    padding-top:10vh;
     margin-left:5vw;
+    margin-bottom:0;
     z-index:10;
     width:90vw;
     display:grid;
     height:90vh;
 }
+
+.button_anim3{
+    overflow: hidden;
+    transition: color .5s;
+  }
+  
+  .button_anim3::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-10%;
+    width: 0%;
+    height: 100%;
+    background-color: #1e021e;
+    z-index: -1;
+    transform: skewX(25deg);
+    transition: width .5s;
+  }
+  
+  .button_anim3:hover::before{
+    width:120%;
+  }
 
 .morecontent h1{
     font-size:3rem;
@@ -58,8 +81,8 @@
 @media screen and (max-width: 750px){
     .morecontent{
         display:block;
-        padding-top:2vh;
-        margin-bottom:10vh;
+        padding-top:0.5vh;
+        margin-bottom:5vh;
     }
 
     

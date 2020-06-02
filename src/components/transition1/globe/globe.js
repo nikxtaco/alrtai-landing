@@ -48,20 +48,20 @@
         var place = ""
             
         return (
-          <div className="container" style={{'margin':'0'}}>
-            <div onMouseLeave={() => {setAutoRotate(true) }} className="main" >
+          <div className="container unfocus" style={{'margin':'0'}}>
+            <div className="main unfocus" >
               <div>
                 <Globe
+                className="unfocus"
                   showAtmosphere={false}
                   backgroundColor={'#1e021e'} //#0a0b29 //#5B43EF
-                  pointsMerge={false}
+                  pointsMerge={true}
                   onPolygonClick={({properties : polygon}) => `
                     <b>${polygon.ADMIN}</b><br/>
                   `} 
                   onPolygonHover={(e) => `
                     ${setAutoRotate(true)}
                   `}
-                  onMouseLeave={() => setAutoRotate(true)}
                   ref={globeEl}
                   globeImageUrl={globeimg}
                   polygonsData={countries.features}

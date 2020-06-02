@@ -18,7 +18,7 @@ export default () => {
             </p>
 
             <div className="demo_button">
-            <button className="morebutton morebutton3">
+            <button className="morebutton morebutton3 button_anim3">
             Demo
             </button>
             <div className="demo_coming_soon">

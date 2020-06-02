@@ -61,7 +61,7 @@ const SecondPage = () => (
       <div className="person6"></div>
       <h2>Max Murmann</h2>
       <h3>Data Scientist</h3>
-      <h4>Max cycles and knowledges.</h4>
+      <h4>Max studied Aerospace Engineering, and after doing a Data Science Immersive course has joined alrt.ai to aid in building a network based Knowledge Graph, as well as help with backend development. In his spare time, he like rock climbing, cycling and analog photography.</h4>
       </div>
 
       </div>

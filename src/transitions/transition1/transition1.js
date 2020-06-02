@@ -9,6 +9,15 @@ import Loading from "../loading/loading.js"
 
 import { HashLink as HLink } from 'react-router-hash-link';
 
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+ 
+const options = [
+  'Risk and Oil'
+];
+
+const defaultOption = options[0];
+
  const Fullpage = props => {
 
   return (
@@ -33,7 +42,7 @@ import { HashLink as HLink } from 'react-router-hash-link';
 
             <div className="login">
             <a href="https://dash.alrt.ai">
-            <button className="button button1">
+            <button className="button button1 button_anim1">
             Log In
             </button>
             </a>
@@ -41,7 +50,7 @@ import { HashLink as HLink } from 'react-router-hash-link';
             </div>
 
             <div className="learn_more">
-            <button className="button button2">
+            <button className="button button2 button_anim2">
             <HLink className='white-text' style={{'margin':'5vh 0', 'text-align':'center'}}
                   to="/#moreinfo" >Learn More</HLink>
             </button>
@@ -52,8 +61,12 @@ import { HashLink as HLink } from 'react-router-hash-link';
     
     </div>
 
-    <div className="component first-component globe">
-      <Globe newsCountReturn={props.newsCountReturn} />
+    <div className="component first-component globe unfocus">
+      <Globe newsCountReturn={props.newsCountReturn} className="unfocus"/>
+      <button className="usecase">Risk and Oil</button>
+      {/* <div className="MenuClassName">
+      <Dropdown style={{'background-color':'pink'}}  className='myClassName Dropdown-control' menuClassName='myMenuClassName' options={options} onChange={null} value={defaultOption} placeholder="Select an option" />;
+        </div> */}
     </div>
 
     </div>
