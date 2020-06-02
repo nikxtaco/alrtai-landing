@@ -185,8 +185,8 @@
 
     .usecase{
         position:relative;
-        left:100vh;
-        top:-10vh;
+        left:45vw;
+        top:-15vh;
     color:white;
     padding:5px 10px;
     border-radius:5px;
@@ -201,6 +201,21 @@
     .globe{
         left:0vw;
         top:60vh;
+    }
+
+    .usecase{
+        left:30vw;
+        right:30vw;
+        width:40vw;
+        top:-15vh;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size:1.3rem;
+    text-decoration: none;
+    border:none;
+    border:2px solid transparent;
+    background-color:transparent;
     }
     
     .content{
