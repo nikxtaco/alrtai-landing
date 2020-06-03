@@ -4,6 +4,7 @@
 
 .unfocus:focus, .unfocus:hover, .unfocus{
     outline: transparent !important;
+    outline: none !important;
     border: transparent !important;
     -webkit-box-shadow: transparent !important;
     box-shadow: transparent !important;

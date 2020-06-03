@@ -4,6 +4,10 @@
     background-color: #1e021e;
     color:white;
     min-height:100vh;
+    position: absolute;
+    z-index:100;
+    width:100vw;
+    height:100vh;
 }
 
 .logo_loading{

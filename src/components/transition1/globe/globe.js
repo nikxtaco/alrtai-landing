@@ -44,7 +44,7 @@
           globeEl.current.controls().autoRotate = true;
           else
           globeEl.current.controls().autoRotate = false;
-          globeEl.current.controls().autoRotateSpeed = 1;
+          globeEl.current.controls().autoRotateSpeed = 2;
           //globeEl.current.onZoom = () => {};
           globeEl.current.pointOfView({ altitude: 2.5 }, 5000);
           
@@ -57,11 +57,10 @@
             
         return (
           <div className="container unfocus" style={{'margin':'0'}}>
-            <div className="main unfocus" >
+            <div className="main " >
 
-              <div>
+              <div className="">
                 <Globe
-                className="unfocus"
                   showAtmosphere={false}
                   backgroundColor={'#1e021e'} //#0a0b29 //#5B43EF
                   pointsMerge={true}

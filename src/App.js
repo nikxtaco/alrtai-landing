@@ -2,12 +2,14 @@ import React, {useEffect, useState} from "react";
 
 import Transition1 from "./transitions/transition1/transition1.js"
 import Transition2 from "./transitions/transition2/transition2.js"
+import Loading from "./transitions/loading/loading.js"
 
 import './App.css';
 
 export default () => {
 
     const [newsCountReturn, setNewsCountReturn] = useState([]);
+    const [loading, setLoading] = useState(true);
     
 
   useEffect(() => { 
@@ -18,14 +20,20 @@ fetch("https://api.alrt.ai/api/v1/user/listallscenario")
   console.log(res.result)
  })
 
+ setTimeout(() => {
+  setLoading(false)
+}, 2000);
+
    }, []);
  
 
 
     return (
       <body>
-        <Transition1  newsCountReturn={newsCountReturn} />           
-        <Transition2  newsCountReturn={newsCountReturn} />
+        {loading && <Loading />}
+        <Transition1  newsCountReturn={newsCountReturn} />  
+        {!loading && <Transition2  newsCountReturn={newsCountReturn} />
+        }
       </body>
     );
   }
