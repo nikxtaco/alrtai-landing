@@ -6,14 +6,16 @@
     import globeimg from "../../../media/texture4.png"
     import "./globe.css"
 
+
+
     const World = props => {
-    let newsCountReturn = props.newsCountReturn
 
       const globeEl = useRef();
       const [countries, setCountries] = useState({ features: []});
       const [altitude, setAltitude] = useState(0.1);
       const [transitionDuration, setTransitionDuration] = useState(1000);
       const [autoRotate, setAutoRotate] = useState(true);
+
   
      
     useEffect(() => {
@@ -22,19 +24,21 @@
           .then(countries=> {
             setCountries(countries);
 
-            //console.log(countries.features[2].properties.ISO_A3)
-
-           // countries.features[2].properties.ISO_A3_EH = countries.features[2].properties.ISO_A3;
-  
             setTimeout(() => {
                 setTransitionDuration(2000);
-                setAltitude(() => feat => Math.max(0.1, Math.sqrt(+feat.properties.POP_EST) * 1e-5)); //7e-5
+                setAltitude(() => feat =>  //console.log(feat.properties.ISO_A3) 
+                //console.log(props.newsCountPerCountry[feat.properties.ISO_A3])
+                Math.max(0.1, Math.sqrt(+feat.properties.POP_EST) * 1e-5)
+ //               Math.max(0.1, Math.sqrt(props.newsCountPerCountry.BLR.storycount) * 1e-5)
+                
+                ); //Math.max(0.1, Math.sqrt(+feat.properties.POP_EST) * 1e-5)
               }, 3000);
             });
         }, []);
   
   
         useEffect(() => {
+         
           // Auto-rotate
           if(autoRotate === true)
           globeEl.current.controls().autoRotate = true;
@@ -43,13 +47,18 @@
           globeEl.current.controls().autoRotateSpeed = 1;
           //globeEl.current.onZoom = () => {};
           globeEl.current.pointOfView({ altitude: 2.5 }, 5000);
+          
         }, [autoRotate]);
 
+
         var place = ""
+
+        
             
         return (
           <div className="container unfocus" style={{'margin':'0'}}>
             <div className="main unfocus" >
+
               <div>
                 <Globe
                 className="unfocus"
@@ -70,14 +79,18 @@
                   polygonSideColor={() => 'rgba(255, 255, 255 ,0.01)'}
                   polygonLabel={({ properties: d }) => `
                     ${place=d.ISO_A3}
+                    
                     <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-                    News Count: ${newsCountReturn[place] ? newsCountReturn[place].storycount : 0}
+                    News Count: ${props.newsCountPerCountry[place] ? props.newsCountPerCountry[place].storycount : 0}
                   `}
                   polygonsTransitionDuration={transitionDuration}
                 />
+    
               </div>
+                {/* {console.log(props.rerender)} */}
             
             </div>
+            
             </div>
         )
       };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Globe from "../../components/transition1/globe/globe.js"
 //import "../css/sections.css";
 import Navbar from "../../components/transition1/navbar/navbar.js"
@@ -9,16 +9,130 @@ import Loading from "../loading/loading.js"
 
 import { HashLink as HLink } from 'react-router-hash-link';
 
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
- 
-const options = [
-  'Risk and Oil'
-];
+import Select from 'react-select'
 
-const defaultOption = options[0];
+const options = [
+  { value: '0', label: 'Oil' },
+  { value: '1', label: 'Risk' },
+  { value: '2', label: 'Sustainable Finance' }
+]
 
  const Fullpage = props => {
+
+  const [UUIDList, setUUIDList] = useState([]);
+  const [nameList, setNameList] = useState([]);
+
+  
+  const [selectedOption, setSelectedOption] = useState("null");
+  var [newsCountPerCountry, setNewsCountPerCountry] = useState([]);
+  var [rerender, setRerender] = useState(true);
+  
+  var counterUUID=0;
+  var counterName=0;
+  
+props.newsCountReturn.map(( {uuid,name} ) => {
+ return <p>
+ {UUIDList[counterUUID++] = {uuid}}
+ {nameList[counterName++] = {name}}
+ </p>
+   });
+
+    var temp;
+    temp=UUIDList[0];
+    //console.log(UUIDList[0])
+    fetch("https://api.alrt.ai/api/v1/viz/globedata", {
+    method: 'POST',
+    headers: new Headers({
+     'Content-Type': 'application/json', // <-- Specifying the Content-Type
+    }),
+    body: {
+    "scenario": {temp}
+    } 
+    })
+    .then((res) => res.json())
+    .then((res) => {
+      setNewsCountPerCountry(res.data);
+    })
+    .catch((error) => {
+    console.error(error);
+    });
+
+
+   function handleChange(selectedOption) {
+    setSelectedOption({ selectedOption });
+    setRerender(!rerender);
+
+    console.log(selectedOption.value)
+      
+        var temp=UUIDList[selectedOption.value].uuid;
+        //console.log(UUIDList[i].uuid)
+        fetch("https://api.alrt.ai/api/v1/viz/globedata", {
+        method: 'POST',
+        headers: new Headers({
+         'Content-Type': 'application/json', // <-- Specifying the Content-Type
+        }),
+        body: {
+        "scenario": {temp},
+        "timedelta": 365
+        } 
+        })
+        .then((res) => res.json())
+        .then((res) => {
+          setNewsCountPerCountry(res.data);
+        })
+        .catch((error) => {
+        console.error(error);
+        });
+
+    
+    
+  }
+
+  useEffect(() => {
+    if(rerender === true)
+    {
+      setRerender(!rerender);
+    }
+  }, [rerender]);
+
+  const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      border: '1px solid white',
+      color: 'white',
+      padding: 0,
+      margin:0,
+    }),
+    container: () => ({
+      position: "relative",
+      textAlign: "left",
+      padding: 0,
+      margin:0,
+    }),
+    placeholder: () => ({
+      color: "white",
+      textAlign: "center",
+    }),
+    menu: () => ({
+      backgroundColor: '#1e021e',
+     
+    }),
+    indicatorsContainer: () => ({
+      backgroundColor:'#1e021e',
+      width: '20vw',
+    }),
+
+    control: () => ({
+      // none of react-select's styles are passed to <Control />
+      maxWidth:'100vw',
+    }),
+    singleValue: (provided, state) => {
+      const opacity = state.isDisabled ? 0.5 : 1;
+      const transition = 'opacity 300ms';
+  
+      return { ...provided, opacity, transition };
+    }
+  }
 
   return (
     <div className="transition1">
@@ -62,8 +176,12 @@ const defaultOption = options[0];
     </div>
 
     <div className="component first-component globe unfocus">
-      <Globe newsCountReturn={props.newsCountReturn} className="unfocus"/>
-      <button className="usecase">Risk and Oil</button>
+    {!rerender &&
+<Globe newsCountReturn={props.newsCountReturn} rerender={rerender} newsCountPerCountry={newsCountPerCountry} nameList={nameList} UUIDList={UUIDList} className="unfocus"/>
+    }
+    <div className="usecase">
+              <Select options={options} placeholder={"Oil"} styles={customStyles} className="usecase" onChange={handleChange}/>
+            </div>
       {/* <div className="MenuClassName">
       <Dropdown style={{'background-color':'pink'}}  className='myClassName Dropdown-control' menuClassName='myMenuClassName' options={options} onChange={null} value={defaultOption} placeholder="Select an option" />;
         </div> */}

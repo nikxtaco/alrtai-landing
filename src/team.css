@@ -33,7 +33,15 @@
     font-weight: 320;
 }
 
-#intro p {
+#about p {
+    margin:2rem auto;
+    font-size:1.1rem;
+    width:75%;
+    font-weight: 300;
+    text-align: center;
+}
+
+#intro p{
     margin:5rem auto;
     font-size:1.1rem;
     width:75%;
