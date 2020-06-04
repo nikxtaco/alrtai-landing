@@ -7,12 +7,12 @@ import Footer from "../../components/transition2/footer/footer.js"
 const Fullpage = props => {
   return (
     <div>
-      {props.newsCountReturn && <div>
+      {/* {props.newsCountReturn && <div> */}
     <MoreInfo />
     <Features />
     <Sections />
     <Footer />
-    </div>}
+    {/* </div>} */}
     </div>
   );
 };
