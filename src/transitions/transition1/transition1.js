@@ -46,7 +46,7 @@ const options = [
      'Content-Type': 'application/json', // <-- Specifying the Content-Type
     }),
     body: {
-    // "scenario": {temp},
+    // "scenario": temp,
     // "timedelta": 7
     } 
     })
@@ -152,9 +152,9 @@ const options = [
   return (
     <div className="transition1">
 
-    {!props.newsCountReturn && <div><Loading /></div>}
+    {/* {!props.newsCountReturn && <div><Loading /></div>} */}
 
-      {props.newsCountReturn && <div>
+      {/* {props.newsCountReturn && <div> */}
       <Navbar/>
 
       <div className="content">
@@ -191,7 +191,7 @@ const options = [
     </div>
 
     <div className="component first-component globe unfocus">
-    {/* {!rerender && // rerender={rerender}  nameList={nameList} UUIDList={UUIDList}  */}
+    {/* {!rerender && // rerender={rerender}  nameList={nameList} UUIDList={UUIDList} */}
 <Globe newsCountReturn={props.newsCountReturn} newsCountPerCountry={newsCountPerCountry} className="unfocus"/>
     {/* } */}
     {/* <div className="usecase">
@@ -203,9 +203,9 @@ const options = [
     </div>
 
     </div>
-            }
+    //         }
 
-    </div>
+    // </div>
   );
 };
 

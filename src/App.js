@@ -8,17 +8,17 @@ import './App.css';
 
 export default () => {
 
-    const [newsCountReturn, setNewsCountReturn] = useState([]);
+  //  const [newsCountReturn, setNewsCountReturn] = useState([]);
     const [loading, setLoading] = useState(true);
     
 
   useEffect(() => { 
 
-fetch("https://api.alrt.ai/api/v1/user/listallscenario")
-.then(res => res.json())
-.then((res) => { setNewsCountReturn(res.result) ;
-  console.log(res.result)
- })
+// fetch("https://api.alrt.ai/api/v1/user/listallscenario")
+// .then(res => res.json())
+// .then((res) => { setNewsCountReturn(res.result) ;
+//   console.log(res.result)
+//  })
 
  setTimeout(() => {
   setLoading(false)
@@ -31,8 +31,9 @@ fetch("https://api.alrt.ai/api/v1/user/listallscenario")
     return (
       <body>
         {loading && <Loading />}
-        <Transition1  newsCountReturn={newsCountReturn} />  
-        {!loading && <Transition2  newsCountReturn={newsCountReturn} />
+        <Transition1  />  
+        {/* newsCountReturn={newsCountReturn} */}
+        {!loading && <Transition2 />
         }
       </body>
     );
