@@ -40,23 +40,27 @@ const options = [
 //     var temp;
 //     temp=UUIDList[0];
     //console.log(UUIDList[0])
-    fetch("https://api.alrt.ai/api/v1/viz/globedata", {
-    method: 'POST',
-    headers: new Headers({
-     'Content-Type': 'application/json', // <-- Specifying the Content-Type
-    }),
-    body: {
-    // "scenario": temp,
-    // "timedelta": 7
-    } 
-    })
-    .then((res) => res.json())
-    .then((res) => {
-      setNewsCountPerCountry(res.data);
-    })
-    .catch((error) => {
-    console.error(error);
-    });
+    useEffect(() => {
+      
+      fetch("https://api.alrt.ai/api/v1/viz/globedata", {
+      method: 'POST',
+      headers: new Headers({
+       'Content-Type': 'application/json', // <-- Specifying the Content-Type
+      }),
+      body: {
+      // "scenario": temp,
+      // "timedelta": 7
+      } 
+      })
+      .then((res) => res.json())
+      .then((res) => {
+        setNewsCountPerCountry(res.data);
+      })
+      .catch((error) => {
+      console.error(error);
+      });
+  
+    }, []);
 
 
   //  function handleChange(selectedOption) {
@@ -152,9 +156,7 @@ const options = [
   return (
     <div className="transition1">
 
-    {/* {!props.newsCountReturn && <div><Loading /></div>} */}
 
-      {/* {props.newsCountReturn && <div> */}
       <Navbar/>
 
       <div className="content">
@@ -191,7 +193,7 @@ const options = [
     </div>
 
     <div className="component first-component globe unfocus">
-    {/* {!rerender && // rerender={rerender}  nameList={nameList} UUIDList={UUIDList} */}
+    {/* {!rerender && // rerender={rerender} */}
 <Globe newsCountReturn={props.newsCountReturn} newsCountPerCountry={newsCountPerCountry} className="unfocus"/>
     {/* } */}
     {/* <div className="usecase">
@@ -203,9 +205,7 @@ const options = [
     </div>
 
     </div>
-    //         }
-
-    // </div>
+           
   );
 };
 

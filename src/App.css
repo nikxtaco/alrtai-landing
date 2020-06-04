@@ -45,6 +45,10 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+canvas{
+  outline:0;
+}
+
 .MuiInputBase-input-24 {
   text-align: center;
 }
