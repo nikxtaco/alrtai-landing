@@ -119,6 +119,7 @@
   .moreimg{
     width:90vw;
     margin:auto;
+    grid-column: 1;
     margin-top:2rem;
     margin-bottom:5rem;
 }
