@@ -6,6 +6,7 @@
     import globeimg from "../../../media/texture4.png"
     import "./globe.css"
 
+    import useWindowDimensions from "./windowDimensions.js"
 
 
     const World = props => {
@@ -36,10 +37,11 @@
             });
         }, []);
   
+        const { height, width } = useWindowDimensions();
   
         useEffect(() => {
-         
-          // Auto-rotate
+         if(width > 750 )
+          {// Auto-rotate
           if(autoRotate === true)
           globeEl.current.controls().autoRotate = true;
           else
@@ -47,19 +49,18 @@
           globeEl.current.controls().autoRotateSpeed = 2;
           //globeEl.current.onZoom = () => {};
           globeEl.current.pointOfView({ altitude: 2.5 }, 5000);
-          
-        }, [autoRotate]);
+          }
+        }, [autoRotate,width]);
 
 
         var place = ""
 
-        
-            
         return (
           <div className="container unfocus" style={{'margin':'0'}}>
             <div className="main " >
-
               <div className="">
+                {/* {console.log(width, height)} */}
+                {width > 750 &&
                 <Globe
                   showAtmosphere={false}
                   backgroundColor={'#1e021e'} //#0a0b29 //#5B43EF
@@ -84,6 +85,7 @@
                   `}
                   polygonsTransitionDuration={transitionDuration}
                 />
+          }
     
               </div>
                 {/* {console.log(props.rerender)} */}

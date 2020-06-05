@@ -220,11 +220,11 @@ background-color:transparent;
     }
     
     .content{
-        margin:5vh;
+        margin:7vh;
         margin-left:5vw;
         width:90vw;
         text-align:center;
-        height:140vh;
+        height:90vh;
     }
     
 .content h1{
@@ -247,7 +247,7 @@ background-color:transparent;
 }
 
 .button{
-    margin-top:1rem;
+    margin-top:2rem;
     padding:2vw 1vw;
     margin-right:0vw;
     width:35vw;

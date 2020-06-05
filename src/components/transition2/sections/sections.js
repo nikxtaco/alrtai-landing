@@ -70,7 +70,7 @@ class App extends React.Component {
       Insurance Pricing
       </h2>
       <p>
-      Insurance brokers need to understand trends related to distinct risk types, for example you want to price cybercrime risk in Western Europe - what are the recently trending topics in this area, which countries are most at risk, what sectors are they targeting. Your historical research providers will be months out of date with analytics - we can tell you up to the minute trends based on key sectors you define.
+      Insurance brokers need to understand trends related to distinct risk types, for example you want to price cybercrime risk in Western Europe - what are the recently trending topics in this area, which countries are most at risk, what industry sectors are they targeting. Your historical research providers will be months out of date with analytics - we can tell you up to the minute trends based on key sectors you define.
       </p>
     </div>
     <img src={img4} alt="" className="img2"/>

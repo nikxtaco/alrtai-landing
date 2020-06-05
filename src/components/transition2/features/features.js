@@ -36,7 +36,7 @@ class App extends React.Component {
       Dashboard
       </h2>
       <p>
-      Our dashboard will show you curated news based on your scenario, classified by theme. For example if you have a watchlist of 100 companies, we can show you and stories based on various types of financial crime: they're scored by severity and grouped into categories like cybercrime, sanctions etc. Explore a node-graph view and see how entities are connected by different news stories. Backtest and research stories that move markets
+      Our dashboard will show you curated news based on your scenario, classified by theme. For example if you have a watchlist of 100 companies, we can show you stories based on various types of financial crime: they're scored by severity and grouped into categories like cybercrime, sanctions etc. Explore a node-graph view and see how entities are connected by different news stories. Backtest and research stories that move markets
       </p>
     </div>
   </div>
