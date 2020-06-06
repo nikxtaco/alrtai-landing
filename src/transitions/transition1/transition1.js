@@ -9,8 +9,6 @@ import Loading from "../loading/loading.js"
 
 import { HashLink as HLink } from 'react-router-hash-link';
 
-import Select from 'react-select'
-
 const options = [
   { value: '0', label: 'Oil' },
   { value: '1', label: 'Risk' },
