@@ -9,6 +9,13 @@ import Loading from "../loading/loading.js"
 
 import { HashLink as HLink } from 'react-router-hash-link';
 
+//Tracker
+import ReactGA from 'react-ga';
+function initializeTracking(){
+ReactGA.initialize('UA-154689535-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
 const options = [
   { value: '0', label: 'Oil' },
   { value: '1', label: 'Risk' },
@@ -16,6 +23,8 @@ const options = [
 ]
 
  const Fullpage = props => {
+   
+  initializeTracking();
 
   var [newsCountPerCountry, setNewsCountPerCountry] = useState([]);
 //   const [UUIDList, setUUIDList] = useState([]);

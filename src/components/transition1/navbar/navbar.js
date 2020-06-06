@@ -15,7 +15,7 @@ const Navbar = () => {
    }, [])
 
    const links = [
-      { id: 1, Name: 'Home', to: '/#home' },
+      { id: 1, Name: 'Home', to: '' },
       { id: 2, Name: 'Team', to: '/team' },
       { id: 3, Name: 'Contact', to: '/contact' },
       // { id: 4, Name: 'Log In', to: 'https://dash.alrt.ai' },
@@ -25,7 +25,7 @@ const Navbar = () => {
       { id: 1, Name: 'Home', to: '/#home' },
       { id: 2, Name: 'Team', to: '/team' },
       { id: 3, Name: 'Contact', to: '/contact' },
-      { id: 4, Name: 'Log In', to: 'https://dash.alrt.ai' },
+      // { id: 4, Name: 'Log In', to: 'https://dash.alrt.ai' },
    ];
 
    return (
@@ -61,6 +61,9 @@ const Navbar = () => {
                   to={link.to} >{link.Name}</HLink>
                </li>
             ))}
+            <li >
+                  <a style={{'margin':'5vh 0', 'text-align':'center', 'color':'white'}} href={"https://dash.alrt.ai"} >{"Login"}</a>
+                     </li>
          </ul>
       </div>
    )

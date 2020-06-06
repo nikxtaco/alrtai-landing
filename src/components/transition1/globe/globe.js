@@ -40,7 +40,7 @@
         const { height, width } = useWindowDimensions();
   
         useEffect(() => {
-         if(width > 750 )
+         if( globeEl.current !== null )
           {// Auto-rotate
           if(autoRotate === true)
           globeEl.current.controls().autoRotate = true;
@@ -56,11 +56,10 @@
         var place = ""
 
         return (
-          <div className="container unfocus" style={{'margin':'0'}}>
+          <div className="container display_none" style={{'margin':'0'}}>
             <div className="main " >
               <div className="">
                 {/* {console.log(width, height)} */}
-                {width > 750 &&
                 <Globe
                   showAtmosphere={false}
                   backgroundColor={'#1e021e'} //#0a0b29 //#5B43EF
@@ -85,7 +84,6 @@
                   `}
                   polygonsTransitionDuration={transitionDuration}
                 />
-          }
     
               </div>
                 {/* {console.log(props.rerender)} */}
