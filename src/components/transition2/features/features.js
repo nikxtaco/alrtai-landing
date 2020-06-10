@@ -24,7 +24,7 @@ class App extends React.Component {
       Alerts
       </h2>
       <p>
-      That's why we're called alrt.ai. We'll find the news before it breaks because we scrape the world's global news feeds to find the story locally before it hits the headlines. Refinery explosion? We'll cluster news into events to make sure you only get the very first alert, then hit our dashboard to research the story in more depth.
+      We'll find the news before it breaks because we scrape the world's global news feeds to find the story locally before it hits the headlines. We'll cluster news into events to make sure you only get the very first alert, then hit our dashboard to research the story in more depth.
       </p>
     </div>
   </div>
@@ -36,7 +36,7 @@ class App extends React.Component {
       Dashboard
       </h2>
       <p>
-      Our dashboard will show you curated news based on your scenario, classified by theme. For example if you have a watchlist of 100 companies, we can show you stories based on various types of financial crime: they're scored by severity and grouped into categories like cybercrime, sanctions etc. Explore a node-graph view and see how entities are connected by different news stories. Backtest and research stories that move markets
+      Our dashboard will show you curated news based on your scenario, classified by theme. For example if you have a watchlist of 100 companies, we can show you stories based on various types of financial crime: they're scored by severity and grouped into categories like cybercrime, sanctions etc.
       </p>
     </div>
   </div>
@@ -48,7 +48,7 @@ class App extends React.Component {
       Niche Markets
       </h2>
       <p>
-      We can quickly and easily create scenarios based on niche markets or scenarios. Stories or topics that aren't covered by major news providers. Create and maintain your own: curate your keywords and even scoring methodologies based on news source quality or reliability. End result is a custom dashboard that will tell you something you don't already know.
+      We can quickly and easily create scenarios based on niche markets or scenarios. Create and maintain your own: curate your keywords and even scoring methodologies based on news source quality or reliability.
       </p>
     </div>
   </div>

@@ -1,13 +1,17 @@
 .morecontent{
     margin:10vh;
     margin-top:0vh;
-    padding-top:10vh;
+    padding-top:2vh;
     margin-left:5vw;
     margin-bottom:0;
+    padding-bottom:0;
     z-index:10;
-    width:90vw;
     display:grid;
-    height:90vh;
+    grid-template-columns: 1fr;
+}
+
+.moretext{
+    grid-column:2;
 }
 
 .button_anim3{
@@ -43,11 +47,11 @@
 
 .morebutton{
     border:none;
-    background-color:white;
-    margin-top:2rem;
-    color:#1e021e;
+    background-color:#1e021e;
+    margin-top:15vh;
+    color:white;
     padding:10px 20px;
-    margin-right:10vw;
+    margin-right:20vw;
     width:15vw;
     border-radius:5px;
     font-size:1.3rem;
@@ -75,19 +79,35 @@
 }
 
 .moreimg{
-    grid-column:2;
-    width:40vw;
-    margin:auto;
+    grid-column:1;
+    width:30vw;
+    margin-left:10vw;
+    margin-bottom: 5vh;
+}
+
+.display1{
+    display:block;
+}
+
+.display2{
+    display:none;
 }
 
 @media screen and (max-width: 750px){
     .morecontent{
-        display:absolute;
+        display:block;
         z-index: 100;
         padding-top:0vh;
         margin-bottom:5vh;
     }
 
+    .display1{
+        display:none;
+    }
+
+    .display2{
+        display:block;
+    }
     
 .demo_coming_soon{
     width:unset;
@@ -121,6 +141,18 @@
     margin:auto;
     grid-column: 1;
     margin-top:2rem;
-    margin-bottom:5rem;
+    margin-bottom:2rem;
+    margin-left:10vw;
 }
 }
+
+
+
+
+
+
+
+
+
+
+

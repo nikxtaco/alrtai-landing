@@ -45,7 +45,6 @@ class App extends React.Component {
       </h2>
       <p>
       You're a trader or an energy analyst. You need to watch news for market moving news stories. Catch that refinery explosion story the moment it gets publish in local news before it hits the major news wires. Analyse historical stories correlated to market prices, look at the impact of a major event and how it impacts related entities or markets. Customise based on the products you trade, the analytics you're working on, and how you filter, score & rank the news you want to see: we'll show you things you didn't already know.
-<br/><br/>In addition we're working with commodity analytics and news research providers to include premium curated news content into our dashboards so that you can link subscribed content with public news for even more in depth analysis.
       </p>
     </div>
     <img src={img2} alt="" className="img2"/>
@@ -95,7 +94,8 @@ class App extends React.Component {
       Your business is...
       </h2>
       <p>
-      ...unique. So many more use cases will fit the platform, the above is only a selection of cases we're working on. Talk to us and we can help you build one that works for your business.      </p>
+      ...unique. So many more use cases will fit the platform, the above is only a selection of cases we're working on. Talk to us and we can help you build one that works for your business.
+      </p>
     </div>
     <img src={img6} alt="" className="img2"/>
   </div>

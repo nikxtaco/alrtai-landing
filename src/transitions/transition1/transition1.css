@@ -68,7 +68,7 @@
     margin:20vh;
     margin-bottom:0vh;
     margin-left:5vw;
-    margin-top:15vh;
+    margin-top:20vh;
     position:relative;
     z-index:10;
     width:50vw;
@@ -83,7 +83,7 @@
 }
 
 .content p{
-    font-size:1.3rem;
+    font-size:1.5rem;
     font-weight:400;
     line-height: 2rem;
 }
@@ -220,7 +220,7 @@ background-color:transparent;
     }
     
     .content{
-        margin:9vh;
+        margin:12vh;
         margin-left:5vw;
         width:90vw;
         text-align:center;
@@ -235,7 +235,7 @@ background-color:transparent;
 }
 
 .content p{
-    font-size:1rem;
+    font-size:1.1rem;
     font-weight:400;
     line-height: 1.2rem;
 }

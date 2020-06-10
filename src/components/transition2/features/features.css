@@ -2,6 +2,10 @@ h2{
     font-size:1.8rem;
 }
 
+p{
+  font-size:1.2rem;
+}
+
 .features{
     display:grid;
     grid-template-columns: 1fr;
@@ -15,8 +19,9 @@ h2{
     grid-row-start: 1;
     grid-row-end:2;
     text-align:left;
-    max-width:30vw;
-    padding:0 2vw;   
+    max-width:20vw;
+    padding:0 0vw;   
+    font-size:3.5rem;
   }
 
   .features hr{
@@ -32,7 +37,7 @@ h2{
     display:block;
     grid-row-start: 1;
     grid-row-end:2;
-    max-width:20vw;
+    max-width:25vw;
     padding-left:0vw;
   }
   
@@ -41,7 +46,7 @@ h2{
     display:block;
     grid-row-start: 1;
     grid-row-end:2;
-    max-width:20vw;
+    max-width:25vw;
     padding-left:2vw;
   }
   
@@ -50,7 +55,7 @@ h2{
     display:block;
     grid-row-start: 1;
     grid-row-end:2;
-    max-width:20vw;
+    max-width:25vw;
     padding-left:4vw;
 }
   
@@ -83,6 +88,13 @@ h2{
     width:80px;
     margin:auto;
   }
+
+  @media screen and (max-width: 1300px){
+    .features h1{  
+      font-size:2.8rem;
+    }
+  }
+  
   
   @media screen and (max-width: 750px){
     .features{

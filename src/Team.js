@@ -12,7 +12,11 @@ const SecondPage = () => (
       <Navbar />
 
     <div id="intro">
-    <p>alrt.ai started almost accidentally following a reddit post on /r/datascience. Long story short, Adarsh was looking for a data science use case for a final year project, Claus saw it, replied, and it took off from there. Adarsh pulled together the founding team and we're working on customising scenarios for news feed analytics to combine and rank stories related to different kinds of entities, then give you alerts, trends, notifications or whatever works for you. In any case, it won't be conventional.</p>
+      <h1>
+        The Team
+      </h1>
+      <hr/>
+    {/* <p>alrt.ai started almost accidentally following a reddit post on /r/datascience. Long story short, Adarsh was looking for a data science use case for a final year project, Claus saw it, replied, and it took off from there. Adarsh pulled together the founding team and we're working on customising scenarios for news feed analytics to combine and rank stories related to different kinds of entities, then give you alerts, trends, notifications or whatever works for you. In any case, it won't be conventional.</p> */}
     </div>
 
     <div id="about">
@@ -35,7 +39,7 @@ const SecondPage = () => (
       <div id="contain3">
       <div className="person3"></div>
       <h2>Shahul ES</h2>
-      <h3>CDSO</h3>
+      <h3>CDS</h3>
       <p>Shahul is a Kaggle Master and is ranked in top 25 among 100K+ Kaggle users. He has 4+ years of acquaintance in the field Data Science and multi-year experience working as a Data Scientist in top start-ups. He  loves contributing and competing in Data science & ML competitions and platforms. He also loves to spend time with AI experts and enjoys public speaking.</p>
       </div>
 
