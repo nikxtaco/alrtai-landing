@@ -31,7 +31,7 @@ const Navbar = () => {
    return (
       <div className="navbar">
          <div className="navbar-fixed">
-            <nav className="nav-wrapper " style={{ "background-color": "#1e021e" }}>
+            <nav className="nav-wrapper " style={{ "backgroundColor": "#1e021e" }}>
                <div className="container">
                   <a href="#" data-target="mobile-nav" className="sidenav-trigger">
                      <i className="material-icons" style={{ color: "#dfdfdf" }}>menu</i>
@@ -40,7 +40,7 @@ const Navbar = () => {
                   <ul className="right hide-on-med-and-down menu_nav" >
                      {links.map(link => (
                         <li key={link.id}>
-                           <HLink style={{'color':'#dfdfdf', 'font-size':'1.2rem'}} to={link.to} >{link.Name}</HLink>
+                           <HLink style={{'color':'#dfdfdf', 'fontSize':'1.2rem'}} to={link.to} >{link.Name}</HLink>
                         </li>
                      ))}
                      <li >
@@ -54,15 +54,15 @@ const Navbar = () => {
             </nav>
          </div>
 
-         <ul className="sidenav" id='mobile-nav' style={{ "background-color": "#1e021e", 'padding-top':'20vh' }}>
+         <ul className="sidenav" id='mobile-nav' style={{ "backgroundColor": "#1e021e", 'paddingTop':'20vh' }}>
             {links_mob.map(link => (
                <li key={link.id} >
-                  <HLink className='white-text' style={{'margin':'5vh 0', 'text-align':'center'}}
+                  <HLink className='white-text' style={{'margin':'5vh 0', 'textAlign':'center'}}
                   to={link.to} >{link.Name}</HLink>
                </li>
             ))}
             <li >
-                  <a style={{'margin':'5vh 0', 'text-align':'center', 'color':'white'}} href={"https://dash.alrt.ai"} >{"Login"}</a>
+                  <a style={{'margin':'5vh 0', 'textAlign':'center', 'color':'white'}} href={"https://dash.alrt.ai"} >{"Login"}</a>
                      </li>
          </ul>
       </div>
